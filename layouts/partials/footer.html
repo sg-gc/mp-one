@@ -1,0 +1,9 @@
+<ul>
+{{- range site.Menus.footer }}
+  <li><a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">
+    {{ .Name }}
+  </a></li>
+{{- end }}
+</ul>
+
+<p>&copy;2026 Medical Practice One</p>

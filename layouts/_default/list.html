@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title><^>{{.Site.Title}}</title>
-        <link rel="stylesheet" href="/style.css">
+        {{ partial "meta.html" . }}
     </head>
     <body>
         <header>
             <h1>{{.Site.Title}}</h1>
+            {{ partial "menu.html" }}
         </header>
         <main>
             <h2>{{.Title}}</h2>
@@ -20,7 +18,7 @@
             </ul>
         </main>
         <footer>
-            <small>Made with love</small>
+            {{partial "footer.html" .}}
         </footer>
     </body>
 </html>

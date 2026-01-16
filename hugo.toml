@@ -1,3 +1,45 @@
 baseURL = ''
 languageCode = 'en-us'
 title = 'Medical Practice One'
+[menus]
+    [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+    [[menus.main]]
+    name = 'Services'
+    pageRef = '/services'
+    weight = 20
+    [[menus.main]]
+    name = 'Providers'
+    pageRef = '/providers'
+    weight = 30
+    [[menus.main]]
+    name = 'Contact'
+    pageRef = '/contact'
+    weight = 40
+        [menus.main.params]
+            class = 'first'
+
+    [[menus.footer]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+    [[menus.footer]]
+    name = 'Services'
+    pageRef = '/services'
+    weight = 20
+    [[menus.footer]]
+    name = 'Providers'
+    pageRef = '/providers'
+    weight = 30
+    [[menus.footer]]
+    name = 'Contact'
+    pageRef = '/contact'
+    weight = 40
+    [[menus.footer]]
+    name = 'Privacy'
+    pageRef = '/privacy'
+    weight = 50
+
+
